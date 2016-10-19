@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Letter</title>
+		<link rel="stylesheet" type="text/css" href="genericons/genericons.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+		<div id="target"><p>Loading...</p></div>
+		<button id="reload">Click me</button>
+
+		<script id="template" type="x-tmpl-mustache">
+			<div id="folders">
+							{{#accounts}}
+							<b>{{name}}</b>
+							<ul>
+											{{#folders}}
+											<li><span class="genericon genericon-category folder">{{.}}</span></li>
+											{{/folders}}
+							</ul>
+							{{/accounts}}
+			</div>
+			<div id="messages">
+							<table>
+											<tr>
+															<th>Subject</th>
+															<th>Date</th>
+															<th>From</th>
+											</tr>
+											{{#messages}}
+											<tr>
+															<td>{{subject}}</td>
+															<td>{{date}}</td>
+															<td>{{from}}</td>
+											</tr>
+											{{/messages}}
+							</table>
+			</div>
+		</script>
+		<div id="console">
+		<pre id="log">This is a console</pre>
+		</div>
+  </body>
+	<script>
+		require("./renderer.js")
+	</script>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "letter",
+  "version": "0.1.0",
+  "description": "A lightweight electron mail app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/echox/letter",
+  "keywords": [
+    "mta",
+    "mail"
+  ],
+  "author": "simon koelsch",
+  "license": "bsd",
+  "devDependencies": {
+    "electron": "^1.4.3",
+    "imap": "^0.8.18",
+    "jquery": "^3.1.1",
+    "mustache": "^2.2.1",
+    "octicons": "^4.4.0"
+  }
+}

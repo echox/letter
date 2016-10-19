@@ -1,0 +1,27 @@
+#folders {
+	float: left;
+	width:20%;
+	border-right: 1px solid black;
+	height:93vh;
+	padding: 1em;
+
+}
+
+#messages {
+	float: left;
+	margin: 1em;
+}
+
+.folder {
+				font-size: 1.5em;
+}
+
+body {
+				margin:0;
+				padding: 0;
+}
+
+#console {
+				clear: both;
+				border-top: 1px solid black;
+}

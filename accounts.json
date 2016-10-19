@@ -1,0 +1,10 @@
+[{
+ "name": "main",
+ "user": "someUser",
+ "address": "someone@example.org",
+ "password": "somepass",
+ "host": "someHost",
+ "port": "143",
+ "tls": true,
+ "autotls": "required"
+}]
