@@ -23,8 +23,15 @@ window.addEventListener('keypress', function(ev){
 	var rendered = Mustache.render(template, data)
 	jq("#target").html(rendered)
 	register()
+				} else if (ev.key === '?') {
+								toggleHelp();
 				}
 });
+
+function toggleHelp() {
+
+				jq("#help").toggle()
+}
 
 function register() {
 
